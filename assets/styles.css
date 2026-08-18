@@ -41,8 +41,10 @@
     --ink-soft:#55625E;
     --line:#E2D9C4;
     --accent-spark:#C1673A;
+    --accent-spark-loud:color-mix(in srgb, var(--accent-spark) 85%, white 15%);
     --accent-calm:#6E4F92;
     --violet-soft:#B79FD9;
+    --eyebrow-calm:var(--accent-calm);
     --ink-fixed:#1A1330;
     --ink-fixed-text:#EFEAE0;
     --ink-fixed-muted:#B4AD99;
@@ -58,6 +60,7 @@
       --ink:#F1E9D8;
       --ink-soft:#AB9EC4;
       --line:#352A4E;
+      --eyebrow-calm:var(--violet-soft);
     }
   }
   :root[data-theme="dark"]{
@@ -66,6 +69,7 @@
     --ink:#F1E9D8;
     --ink-soft:#AB9EC4;
     --line:#352A4E;
+    --eyebrow-calm:var(--violet-soft);
   }
 
   *{ box-sizing:border-box; }
@@ -118,7 +122,7 @@
 
   /* ---------- hero ---------- */
   .hero{ padding:clamp(48px,8vw,96px) 0 clamp(32px,5vw,56px); position:relative; overflow:hidden; }
-  .hero .eyebrow{ color:var(--accent-spark); margin-bottom:22px; }
+  .hero .eyebrow{ color:var(--accent-spark-loud); margin-bottom:22px; }
   .leap-stage{ position:relative; min-height:clamp(220px,34vw,340px); }
   .leap-heading{ margin:0; font-size:1rem; font-weight:normal; }
   .leap-word{ font-family:var(--display); font-weight:800; letter-spacing:-.02em; line-height:.92; text-wrap:balance; position:absolute; margin:0; }
@@ -172,7 +176,7 @@
   /* ---------- light sections ---------- */
   .light{ padding:clamp(56px,9vw,110px) 0; }
   .section-head{ margin-bottom:clamp(28px,5vw,48px); }
-  .section-head .eyebrow{ color:var(--accent-calm); margin-bottom:10px; }
+  .section-head .eyebrow{ color:var(--eyebrow-calm); margin-bottom:10px; }
   h2{ font-family:var(--display); font-weight:700; letter-spacing:-.01em; font-size:clamp(1.7rem,3vw,2.4rem); margin:0 0 8px; text-wrap:balance; }
   .section-sub{ color:var(--ink-soft); font-size:1.02rem; max-width:46ch; margin:0; }
 
@@ -257,7 +261,7 @@
   .closing-arc{ position:absolute; inset:0; width:100%; height:100%; opacity:.14; }
   .closing-arc path{ fill:none; stroke:url(#leapGradient); stroke-width:2.5; stroke-dasharray:.1 9; stroke-linecap:round; }
   .closing-inner{ position:relative; z-index:1; }
-  .closing .eyebrow{ color:var(--accent-spark); margin-bottom:16px; }
+  .closing .eyebrow{ color:var(--accent-spark-loud); margin-bottom:16px; }
   .closing h2{ color:var(--ink-fixed-text); font-size:clamp(1.9rem,4vw,3rem); max-width:18ch; }
   .closing p.lede{ color:var(--ink-fixed-muted); max-width:48ch; font-size:1.05rem; margin:14px 0 44px; }
   .contact-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:28px 40px; border-top:1px solid rgba(255,255,255,.12); padding-top:34px; margin:0; }
@@ -278,7 +282,7 @@
   .dialog-inner{ position:relative; padding:clamp(30px,6vw,52px); max-height:82vh; overflow-y:auto; }
   .dialog-close{ position:sticky; top:0; float:right; margin:-10px -10px 10px 10px; width:34px; height:34px; border-radius:50%; border:1px solid var(--line); background:var(--bg-card); color:var(--ink-soft); font-size:1.2rem; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:color .2s ease, border-color .2s ease; }
   .dialog-close:hover{ color:var(--ink); border-color:var(--ink-soft); }
-  .legal-dialog .eyebrow{ color:var(--accent-calm); margin-bottom:8px; }
+  .legal-dialog .eyebrow{ color:var(--eyebrow-calm); margin-bottom:8px; }
   .legal-dialog h2{ font-family:var(--display); font-weight:700; font-size:clamp(1.4rem,3vw,1.8rem); margin:0 0 20px; }
   .legal-dialog h3{ font-family:var(--display); font-weight:600; font-size:1.05rem; margin:30px 0 10px; }
   .legal-dialog h4{ font-family:var(--display); font-weight:600; font-size:.92rem; margin:20px 0 8px; }
