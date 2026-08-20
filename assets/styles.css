@@ -264,6 +264,9 @@
   .legal-links{ display:flex; align-items:center; gap:10px; }
   .legal-link{ background:none; border:none; padding:0; font:inherit; letter-spacing:inherit; color:var(--ink-fixed-muted); text-decoration:underline; text-underline-offset:3px; cursor:pointer; transition:color .2s ease; }
   .legal-link:hover{ color:var(--ink-fixed-text); }
+  .footer-location{ display:inline-flex; align-items:center; justify-content:flex-end; gap:8px; }
+  .footer-social{ display:inline-flex; color:var(--ink-fixed-muted); transition:color .2s ease; }
+  .footer-social:hover{ color:var(--ink-fixed-text); }
   .footer-badges{ grid-column:1/-1; display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:14px; padding-top:16px; border-top:1px solid rgba(255,255,255,.08); }
   .footer-badge{ font-family:var(--mono); font-size:.66rem; letter-spacing:.05em; text-transform:uppercase; font-weight:400; padding:6px 12px; border-radius:999px; background:var(--bg-card); color:var(--accent-calm-loud); }
 
