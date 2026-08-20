@@ -209,8 +209,6 @@
   .service-icon{ position:relative; z-index:1; width:30px; height:30px; color:var(--accent-calm-loud); overflow:visible; }
   .service-card h3{ position:relative; z-index:1; font-family:var(--display); font-weight:600; font-size:1.08rem; margin:0; letter-spacing:-.005em; }
   .service-card p{ position:relative; z-index:1; margin:0; color:color-mix(in srgb, var(--ink-soft) 50%, var(--ink) 50%); font-size:.92rem; line-height:1.55; }
-  .card-arrow{ position:absolute; right:20px; bottom:22px; z-index:1; font-family:var(--mono); font-size:.85rem; color:var(--accent-calm-loud); opacity:0; transform:translate(-6px,6px); transition:opacity .3s ease, transform .3s ease; }
-  .service-card:hover .card-arrow{ opacity:1; transform:translate(0,0); }
 
   /* per-icon micro-interactions on hover */
   .blink-dot{ transition:opacity .3s ease; }
