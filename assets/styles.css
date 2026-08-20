@@ -35,16 +35,16 @@
   }
 
   :root{
-    --bg:#F7F2E6;
-    --bg-card:#FFFDF8;
-    --ink:#17262A;
-    --ink-soft:#55625E;
-    --line:#E2D9C4;
+    --bg:#170F27;
+    --bg-card:#211736;
+    --ink:#F1E9D8;
+    --ink-soft:#AB9EC4;
+    --line:#352A4E;
     --accent-spark:#C1673A;
     --accent-spark-loud:color-mix(in srgb, var(--accent-spark) 70%, white 30%);
     --accent-calm:#6E4F92;
     --violet-soft:#B79FD9;
-    --accent-calm-loud:var(--accent-calm);
+    --accent-calm-loud:var(--violet-soft);
     --ink-fixed:#1A1330;
     --ink-fixed-text:#EFEAE0;
     --ink-fixed-muted:#B4AD99;
@@ -52,24 +52,6 @@
     --display:'League Spartan', 'Segoe UI', system-ui, sans-serif;
     --body-font:'Newsreader', Georgia, 'Palatino Linotype', serif;
     --mono:'Plex Mono', Consolas, 'Cascadia Code', monospace;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#170F27;
-      --bg-card:#211736;
-      --ink:#F1E9D8;
-      --ink-soft:#AB9EC4;
-      --line:#352A4E;
-      --accent-calm-loud:var(--violet-soft);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#170F27;
-    --bg-card:#211736;
-    --ink:#F1E9D8;
-    --ink-soft:#AB9EC4;
-    --line:#352A4E;
-    --accent-calm-loud:var(--violet-soft);
   }
 
   *{ box-sizing:border-box; }
